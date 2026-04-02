@@ -1,0 +1,233 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+% ATS-friendly PDF text extraction (T1 + Latin Modern)
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\hypersetup{
+  pdftitle={Eleni Zafeiri Resume},
+  pdfauthor={Eleni Zafeiri},
+  pdfsubject={Resume},
+  pdfkeywords={Product Owner, Product Management, Backlog, User Stories, Agile, Scrum, WordPress, Stakeholder Management, React, Discovery}
+}
+\makeatletter
+\g@addto@macro\UrlBreaks{\do\/}
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large\bfseries
+}{}{0em}{}[\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeadingLink}[4]{
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small \href{#1}{\textbf{\underline{#2}}} $|$ \emph{#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{\textbullet}
+\renewcommand\labelitemii{\textbullet}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeVolunteerHeading}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}\ | \textit{\small #2} & \textit{\small #3} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeExperienceHeading}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}\ | \textit{\small #2} & \textit{\small #3} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% GitHub URLs
+\newcommand{\githubhookgrab}{https://github.com/feirw/hook-and-grab}
+\newcommand{\githubcsplatform}{https://github.com/feirw/technotesgrr}
+\newcommand{\githubathensgo}{https://github.com/feirw/athensgoo}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\LARGE\bfseries Eleni Zafeiri} \\ \vspace{1pt}
+    {\small\textit{Product Owner · B.S.\ Computer Science (expected Jun.\ 2026)}} \\ \vspace{2pt}
+    \small
+    \href{https://github.com/feirw}{github.com/feirw} \quad
+    Athens, Greece \quad
+    \href{tel:+306983426662}{+30 698 342 6662} \quad
+    \href{mailto:elenzaff@icloud.com}{elenzaff@icloud.com} \quad
+    \href{https://www.linkedin.com/in/elenizafeiri}{linkedin.com/in/elenizafeiri} \quad
+    \href{https://elenizafeiri.com/}{elenizafeiri.com}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National and Kapodistrian University of Athens}{Athens, Greece}
+      {Bachelor of Science in Computer Science, GPA: 8.54/10}{Expected Jun. 2026}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeExperienceHeading{Product Owner}{HongLong, Remote}{Sep. 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Own prioritization and delivery for the organization's WordPress-based digital products; triage and drive resolution of around 7 support items weekly while aligning fixes and enhancements with stakeholder goals}
+        \resumeItem{Reduced production website errors by 40\% within six months by clarifying acceptance criteria, tightening release checks, and coordinating iterative fixes with contributors}
+        \resumeItem{Run discovery with internal stakeholders; translate needs into prioritized backlog items, user stories, and implementation-ready specs (HTML/CSS/JS, WordPress ecosystem)}
+      \resumeItemListEnd
+
+    \resumeExperienceHeading{Project Manager Intern}{Threenitas, Hybrid}{Sep. 2025 -- Oct. 2025}
+      \resumeItemListStart
+        \resumeItem{Supported sprint execution for cross-functional teams of 5+ using Agile/Scrum ceremonies, dependencies tracking, and delivery communication}
+        \resumeItem{Broke down business asks into unambiguous technical specifications and acceptance criteria for engineers, cutting rework and clarification loops}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{My Passion Project}
+    \resumeSubHeadingListStart
+      \resumeProjectHeadingLink
+          {\githubhookgrab}
+          {Hook \& Grab}
+          {Full Stack Marketplace $|$ React.js, Node.js, Tailwind CSS}
+          {Nov. 2024 -- Dec. 2024}
+          \resumeItemListStart
+            \resumeItem{Co-defined and validated a marketplace product addressing marine pollution; led product discovery and prioritized 5 core features that enabled recycling workflows}
+            \resumeItem{Earned 1st place among 10+ competing teams at university hackathon}
+          \resumeItemListEnd
+      \resumeProjectHeadingLink
+          {\githubcsplatform}
+          {CS Student Learning Platform}
+          {Full Stack Web App $|$ React.js, JavaScript, Tailwind CSS}
+          {Jun. 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built and deployed a learning platform used by 50+ students, featuring quizzes, flashcards, and algorithm visualizations; applied iterative user testing and user-centered design to improve usability}
+          \resumeItemListEnd
+      \resumeProjectHeadingLink
+          {\githubathensgo}
+          {AthensGo}
+          {Mobile App $|$ AI Itinerary Generator, Product Management}
+          {Nov. 2025}
+          \resumeItemListStart
+            \resumeItem{Defined MVP features for an AI-powered itinerary generator via user persona analysis (3 personas), focusing on accessibility and personalization; contributed to semi-finalist ranking}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------VOLUNTEER EXPERIENCE-----------
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+
+    \resumeVolunteerHeading{Project Manager}{DiT Coding Club}{Dec. 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Planned and coordinated 4+ hackathons and tech events; managed organizing teams of 10+ members and 150+ student participants using Agile sprint planning}
+      \resumeItemListEnd
+
+    \resumeVolunteerHeading{Hackathon Coordinator}{Texas A\&M University $\times$ UoA, Greece}{Feb. 2025 -- Mar. 2025}
+      \resumeItemListStart
+        \resumeItem{Managed cross-university logistics and communication for an international hackathon with 80+ participants}
+      \resumeItemListEnd
+
+    \resumeVolunteerHeading{Project Buddy}{Sistech Global}{Sep. 2025 -- Dec. 2025}
+      \resumeItemListStart
+        \resumeItem{Delivered digital literacy and AI tools training to 10+ refugee women, supporting their professional integration into the tech sector}
+      \resumeItemListEnd
+
+    \resumeVolunteerHeading{Volunteer Coordinator}{WELEAD}{Mar. 2025 -- Aug. 2025}
+      \resumeItemListStart
+        \resumeItem{Coordinated logistics and workshops for 3+ tech events with 100+ participants}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Product ownership}{: Backlog management \& refinement, user stories, acceptance criteria, roadmap planning, MVP scoping, feature prioritization (MoSCoW), stakeholder workshops, discovery \& validation, risk trade-offs, metrics-driven iteration} \\
+     \textbf{Agile delivery}{: Scrum, sprint planning, cross-functional alignment, turning requirements into specs, release coordination, stakeholder communication} \\
+     \textbf{Technical fluency}{: Strong enough to partner with engineering on web products---WordPress (themes/plugins, content ops), JavaScript, HTML/CSS; familiarity from delivery work with React.js, Node.js, Tailwind CSS; Git/GitHub} \\
+     \textbf{Programming (academic \& projects)}{: Java, C, C++} \\
+     \textbf{AI \& tooling}{: Prompt engineering, generative AI tools for research and documentation} \\
+     \textbf{Certifications}{: Product Strategy \& Product Discovery (Product School) $|$ Prompt Engineering (AWS) $|$ Project Management (Workearly) $|$ Effective Data Communication \& Storytelling (Deloitte) $|$ Digital Literacy Awareness (Cisco)} \\
+     \textbf{Languages}{: Greek (native) $|$ English (C2---ECPE, LRN) $|$ French (B2---DELF)} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
