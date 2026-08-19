@@ -10,7 +10,7 @@
 % ATS-friendly PDF text extraction (T1 + Latin Modern)
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{lmodern}
+% lmodern not required for ATS text extraction; T1 fontenc handles it
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -97,10 +97,7 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-% GitHub URLs
-\newcommand{\githubhookgrab}{https://github.com/feirw/hook-and-grab}
 \newcommand{\githubcsplatform}{https://technotesgr.com}
-\newcommand{\githubathensgo}{https://github.com/feirw/athensgoo}
 
 %-------------------------------------------
 \begin{document}
@@ -108,7 +105,7 @@
 %----------HEADING----------
 \begin{center}
     {\LARGE\bfseries Eleni Zafeiri} \\ \vspace{1pt}
-    {\small\textit{Software Engineer · B.S.\ Computer Science}} \\ \vspace{2pt}
+    {\small\textit{Software Engineer $\cdot$ Computer Science Undergraduate}} \\ \vspace{2pt}
     \small
     \href{https://github.com/feirw}{github.com/feirw} \quad
     Athens, Greece (Open to Remote) \quad
@@ -124,9 +121,9 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {National and Kapodistrian University of Athens}{Athens, Greece}
-      {Bachelor of Science in Computer Science, GPA: 8.54/10}{Expected Jun. 2028}
+      {B.Sc.\ in Computer Science, GPA: 8.2/10}{Expected June 2028}
       \resumeItemListStart
-        \resumeItem{Coursework: Data Structures \& Algorithms, OOP, Operating Systems, Databases, Computer Networks, Software Engineering.}
+        \resumeItem{Coursework: Data Structures \& Algorithms, Object-Oriented Programming, Operating Systems, Databases, Computer Networks, Software Engineering.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -137,96 +134,104 @@
 
     \resumeExperienceHeading{Software Engineer}{HongLong, Remote}{Sep. 2025 -- Present}
       \resumeItemListStart
-        \resumeItem{Develop and maintain WordPress-based web products end-to-end, writing HTML/CSS/JS and shipping weekly releases across multiple codebases.}
-        \resumeItem{Reduced production defects by 40\% in six months through systematic root-cause analysis and pre-release regression testing.}
-        \resumeItem{Resolve 7+ support tickets per week, independently triaging by severity in a fully remote, async environment.}
-        \resumeItem{Collaborate with designers and stakeholders via Slack and GitHub to translate requirements into technical specs.}
-      \resumeItemListEnd
-
-    \resumeExperienceHeading{Technical Project Manager Intern}{Threenitas, Hybrid}{Sep. 2025 -- Oct. 2025}
-      \resumeItemListStart
-        \resumeItem{Facilitated Scrum ceremonies for engineering teams of 5+, tracking dependencies and ensuring on-time releases.}
-        \resumeItem{Authored technical specs and acceptance criteria that reduced rework cycles and improved cross-team alignment.}
+        \resumeItem{Build and maintain WordPress web products end-to-end in HTML, CSS, and JavaScript, shipping weekly releases across multiple codebases.}
+        \resumeItem{Cut production defects by 40\% in six months through root-cause analysis and pre-release regression testing.}
+        \resumeItem{Triage and resolve 7+ support tickets per week by severity in a fully remote, asynchronous environment.}
+        \resumeItem{Work with designers and stakeholders over Slack and GitHub to turn requirements into technical specifications.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
-\section{Engineering Projects}
+\section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeadingLink
           {\githubcsplatform}
-          {TechnotesGR --- Learning Platform}
+          {TechnotesGR --- Greek Learning Platform}
           {React.js, TypeScript, Tailwind CSS}
-          {Jun. 2025 -- Present}
+          {June 2025 -- Present}
           \resumeItemListStart
-            \resumeItem{Designed, built, and deployed a production learning platform with quizzes, spaced-repetition flashcards, and algorithm visualizations at \href{https://technotesgr.com}{technotesgr.com}.}
+            \resumeItem{Designed, built, and deployed a production learning platform with quizzes, spaced-repetition flashcards, and algorithm and data-structure visualizations.}
             \resumeItem{Improved usability through iterative user testing, reducing task-completion time and increasing session duration.}
-            \resumeItem{Manage the full deployment pipeline and ship ongoing feature releases with Git-based version control.}
+            \resumeItem{Own the deployment pipeline and ship ongoing feature releases with Git-based version control.}
           \resumeItemListEnd
-      \resumeProjectHeadingLink
-          {https://github.com/feirw}
-          {Epirus Shield --- Scam Detection App}
-          {Mobile App, AI, Real-Time Audio Processing}
-          {May 2026}
-          \resumeItemListStart
-            \resumeItem{Built a real-time scam detection system that flags fraudulent callers during phone calls, developed for the Bank of Epirus.}
-            \resumeItem{Integrated AI-driven audio analysis to detect suspicious patterns and alert users in real time.}
-            \resumeItem{\textbf{1st place} out of 45 competing entries.}
-          \resumeItemListEnd
-      \resumeProjectHeadingLink
-          {\githubhookgrab}
-          {Hook \& Grab --- Full-Stack Marketplace}
-          {JavaScript, CSS, HTML, Tailwind CSS}
-          {Nov. 2024 -- Dec. 2024}
-          \resumeItemListStart
-            \resumeItem{Built a full-stack marketplace with REST endpoints for listings, auth, and transactions.}
-            \resumeItem{\textbf{1st place} out of 10+ teams at a university hackathon.}
-          \resumeItemListEnd
-      \resumeProjectHeadingLink
-          {\githubathensgo}
-          {AthensGo --- AI Itinerary Generator}
-          {Mobile App, AI Integration}
-          {Nov. 2025}
-          \resumeItemListStart
-            \resumeItem{Scoped MVP features for an AI-powered itinerary app targeting three user personas with accessibility constraints.}
-            \resumeItem{Designed user flows and wireframes for the core booking experience.}
-          \resumeItemListEnd
+
     \resumeSubHeadingListEnd
+
+
+%-----------HONORS \& AWARDS-----------
+\section{Honors \& Awards}
+  \resumeSubHeadingListStart
+
+    \resumeExperienceHeading{1st Place, OpenAI Community Hackathon}{OpenAI}{July 2026}
+      \resumeItemListStart
+        \resumeItem{Built Reelio, an AI video editor that turns raw footage into ready-to-post content in minutes; 1st among 8 teams, awarded \$5{,}000 in credits.}
+      \resumeItemListEnd
+
+    \resumeExperienceHeading{1st Place, OpenHackathon}{Open Conf}{May 2026}
+      \resumeItemListStart
+        \resumeItem{Built Epirus Shield, a real-time call scam detector for the Bank of Epirus; 1st among 45 entries, awarded \$2{,}500.}
+      \resumeItemListEnd
+
+    \resumeExperienceHeading{3rd Place, Crazy Business Ideas Hackathon}{IST College}{Mar. 2026}
+      \resumeItemListStart
+        \resumeItem{Placed 3rd among 130 participants with a tourism-focused business idea; awarded a 100\% Master's scholarship at IST College.}
+      \resumeItemListEnd
+
+    \resumeExperienceHeading{1st Place, 2nd Blue \& Circular Economy Hackathon}{Odyssea}{Dec. 2024}
+      \resumeItemListStart
+        \resumeItem{Built \href{https://github.com/UniversityOfAthens/hook-and-grab}{\underline{Hook \& Grab}}, a marketplace for amateur fishers to buy and sell second-hand fishing gear; awarded \$1{,}500.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
 
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: JavaScript (ES6+), TypeScript, HTML5, CSS3, Java, C, C++} \\
+     \textbf{Languages}{: JavaScript, TypeScript, HTML5, CSS3, Java, C, C++} \\
      \textbf{Frontend}{: React.js, Tailwind CSS, responsive design, component-based architecture} \\
-     \textbf{Backend}{: Node.js, REST APIs, WordPress (themes, plugins, PHP hooks)} \\
-     \textbf{Tools \& Platforms}{: Git, GitHub, VS Code, npm, Agile/Scrum, CI/CD workflows} \\
-     \textbf{Soft Skills}{: Async remote collaboration, clear written communication, ownership, fast learning, cross-functional teamwork, adaptability} \\
+    \textbf{Tools \& Platforms}{: Git, GitHub, VS Code, npm, Agile/Scrum, CI/CD workflows} \\
+     \textbf{Collaboration}{: Async remote work, written communication, ownership, cross-functional teamwork} \\
     }}
  \end{itemize}
 
 
 %-----------VOLUNTEER EXPERIENCE-----------
 \section{Volunteer Experience}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Project Manager}{: DiT Coding Club---organized 4+ hackathons (150+ participants) \hfill \textit{Dec. 2024 -- Present}} \\
-     \textbf{Tech Mentor}{: Sistech Global---trained refugee women entering tech \hfill \textit{Sep. 2025 -- Dec. 2025}} \\
-     \textbf{Volunteer Coordinator}{: WELEAD---coordinated logistics and workshops for 3+ tech events (100+ participants) \hfill \textit{Mar. 2025 -- Aug. 2025}} \\
-     \textbf{Hackathon Coordinator}{: Texas A\&M $\times$ UoA international event (80+ participants) \hfill \textit{Feb. 2025 -- Mar. 2025}} \\
-    }}
- \end{itemize}
+  \resumeSubHeadingListStart
+
+    \resumeExperienceHeading{Project Manager}{DiT Coding Club}{Dec. 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Organized 4+ hackathons for 150+ participants, coordinating logistics, mentors, and judging panels.}
+      \resumeItemListEnd
+
+    \resumeExperienceHeading{Tech Mentor}{Sistech Global}{Sep. 2025 -- Dec. 2025}
+      \resumeItemListStart
+        \resumeItem{Mentored refugee women transitioning into tech careers, guiding them through foundational programming concepts and job-readiness skills.}
+      \resumeItemListEnd
+
+    \resumeExperienceHeading{Volunteer Coordinator}{WELEAD}{Mar. 2025 -- Aug. 2025}
+      \resumeItemListStart
+        \resumeItem{Coordinated logistics and workshops for 3+ tech events reaching 100+ participants.}
+      \resumeItemListEnd
+
+    \resumeExperienceHeading{Hackathon Coordinator}{Texas A\&M $\times$ UoA International Event}{Feb. 2025 -- Mar. 2025}
+      \resumeItemListStart
+        \resumeItem{Coordinated a cross-university hackathon for 80+ participants alongside Texas A\&M organizers.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
 
 
-%-----------CERTIFICATIONS & LANGUAGES-----------
+%-----------CERTIFICATIONS \& LANGUAGES-----------
 \section{Certifications \& Languages}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Certifications}{: Prompt Engineering (AWS) $|$ Project Management (Workearly) $|$ Data Storytelling (Deloitte) $|$ Digital Literacy (Cisco)} \\
-     \textbf{Languages}{: English (C2---ECPE, LRN) $|$ Greek (native) $|$ French (B2---DELF)} \\
+     \textbf{Languages}{: English (C2 --- ECPE, LRN) $|$ Greek (native) $|$ French (B2 --- DELF)} \\
     }}
  \end{itemize}
 
